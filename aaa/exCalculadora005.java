@@ -4,6 +4,14 @@ import java.util.Scanner;
 
 public class exCalculadora005 {
 	public static void main(String[] args) {
+		
+		
+		
+		startOperations();
+	}
+	
+	public static void startOperations() {
+		
 		Scanner input = new Scanner(System.in);
 		
 		System.out.println("DIGITE A OPERAÇÃO");
@@ -17,9 +25,11 @@ public class exCalculadora005 {
 		
 		
 		System.out.println("--------------------");
-		if(operation != null) calculadora(num1,num2,operation);
+		if(operation != null) calculadora2(num1,num2,operation);
 		
+	
 	}
+	
 	
 	public static void calculadora(double num1, double num2, String operation) {
 		if(operation.equals("soma")) {
@@ -38,6 +48,18 @@ public class exCalculadora005 {
 		}
 		else {
 			System.out.println("DIGITE UMA OPERAÇÂO VÁLIDA");
+		}
+		
+	}
+	
+	public static void calculadora2(double num1, double num2, String operation) {
+		switch(operation) {
+		case "soma" : System.out.println(num1 + num2);
+		case "subtração" : System.out.println(num1 - num2);
+		case "multiplicação" : System.out.println(num1 * num2);
+		case "divisão" : System.out.println(num1 / num2);
+
+
 		}
 		
 	}
